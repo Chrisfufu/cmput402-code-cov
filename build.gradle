@@ -1,7 +1,7 @@
 plugins {
     id 'com.github.johnrengelman.shadow' version '4.0.2'
     // TODO: Add jococo plugin
-    id 'jacoco' version '0.8.5'
+    'jacoco'
 }
 
 group 'com.example.helloworld'
@@ -43,6 +43,9 @@ jacocoTestReport {
     reports {
         xml.enabled true
     }
+}
+jacoco {
+    toolVersion = "0.8.5"
 }
 
 shadowJar {
