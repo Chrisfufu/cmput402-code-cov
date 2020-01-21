@@ -26,5 +26,7 @@ jobs:
     - name: Upload coverage to Codecov
       run: gradle jacocoTestReport
     - name: Run bash
+      env:
+          CODECOV_TOKEN: ${{ secrets.Chris }}
       run: bash <(curl -s https://codecov.io/bash)
 
