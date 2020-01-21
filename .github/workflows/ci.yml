@@ -24,7 +24,8 @@ jobs:
     # TODO: Add Codecov (make sure to set up on codecov.io as well) 
     #       for test coverage reports
     - name: Upload coverage to Codecov
-      with:
+        uses: ./
+        with:
           token: ${{CODECOV_TOKEN="2744cf5c-2272-4e86-b760-7cb07c281d8e"}}
           flags: unittest
           name: codecov-1
