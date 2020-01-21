@@ -28,3 +28,7 @@ jobs:
 
     # TODO: Add Codecov (make sure to set up on codecov.io as well) 
     #       for test coverage reports
+    - name: Run codecov
+      run: ./gradlew codeCoverageReport
+    - name: after_success
+      run: bash <(curl -s https://codecov.io/bash)
