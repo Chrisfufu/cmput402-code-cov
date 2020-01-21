@@ -3,6 +3,7 @@ name: code-coverage-lab
 # Trigger for master branch only
 on: [ push ]
 
+
 jobs:
   build-and-integration-test:
     runs-on: ubuntu-latest    
